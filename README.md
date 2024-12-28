@@ -502,10 +502,13 @@ export VARIABLE_NAME=value`
 95. file: Determine file type.
     Example: `file file.txt`
 
-96. hostname: Print or set the system's hostname.
+96. rync: To synchronize files and directories between two servers, the rsync command is commonly used in Linux.
+    <br> Example: `rsync -avz /path/to/source/ user@remote_server:/path/to/destination/`
+
+97. hostname: Print or set the system's hostname.
     Example: `hostname`
 
-97. uptime: Display the system's uptime.
+98. uptime: Display the system's uptime.
     Example: `uptime`
 
 99. free: Display amount of free and used memory.
@@ -513,14 +516,3 @@ export VARIABLE_NAME=value`
     
 101. To list the top memory-occupying services in Linux.
      Example: `ps aux --sort=-%mem | head -n 10`
-
-
-
-
-
-
-
-
-   
-
-
