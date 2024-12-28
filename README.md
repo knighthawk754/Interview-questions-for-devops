@@ -491,9 +491,11 @@ export VARIABLE_NAME=value`
 97. uptime: Display the system's uptime.
     Example: `uptime`
 
-
 99. free: Display amount of free and used memory.
     Example: `free -h`
+    
+101. To list the top memory-occupying services in Linux.
+     Example: `ps aux --sort=-%mem | head -n 10`
 
 
 
