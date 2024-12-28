@@ -133,6 +133,23 @@ This repository provides a list of important Linux commands that are frequently 
     Example: `scp file.txt user@hostname:/path/to/destination`
 6. `curl`: Transfers data to or from a server.
     Example: `curl http://example.com`
+### What is the Significance of `netstat -tuln`
+
+The command `netstat -tuln` in Linux is used to display the network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. Specifically, the options `-tuln` provide the following details:
+
+- **`-t`**: Show TCP sockets.
+- **`-u`**: Show UDP sockets.
+- **`-l`**: Show only listening sockets.
+- **`-n`**: Show numerical addresses instead of resolving hostnames.
+
+#### Display Active Listening Ports
+The command shows all the TCP and UDP ports that are currently in a listening state. This is useful for identifying which services are running and listening for incoming connections on your system.
+
+#### Show Numerical Addresses
+By using the `-n` option, the command displays IP addresses and port numbers in numerical format, which can speed up the output and avoid issues with DNS resolution.
+
+#### Filter by Protocol
+The `-t` and `-u` options filter the results to show only TCP and UDP connections, respectively. This helps in focusing on specific types of network traffic.
 ## Changing Permissions
 
 ### `chmod`
@@ -496,6 +513,9 @@ export VARIABLE_NAME=value`
     
 101. To list the top memory-occupying services in Linux.
      Example: `ps aux --sort=-%mem | head -n 10`
+
+
+
 
 
 
