@@ -1,6 +1,6 @@
-#Shell Scripting
+# Shell Scripting
 
-##Backup Script: Automate the Process of Creating Backups of Important Files or Directories with Timestamped Names
+## Backup Script: Automate the Process of Creating Backups of Important Files or Directories with Timestamped Names
 
 ```bash
 #!/bin/bash
@@ -28,4 +28,5 @@ fi
 # Optional: Cleanup old backups (e.g., older than 30 days)
 find "$BACKUP_DIR" -type f -name "backup_*.tar.gz" -mtime +30 -exec rm -f {} \;
 
-exit 0```
+exit 0
+```
